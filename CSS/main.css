@@ -1,0 +1,186 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Game{
+  min-height: 100vh;
+  background-color: #eee;
+  position: relative;
+  overflow: hidden;
+}
+
+.Game .start{
+  text-align: center;
+  line-height: 3;
+  background-color: rgb(0 0 0/0.85);
+  color: white;
+  font-size: 20px;
+  border-radius: 3px;
+  user-select: none;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Game .start .start-btn,
+.Game .start .easy,
+.Game .start .meduim,
+.Game .start .hard{
+  display: inline-block;
+  margin: 20px;
+  width: 110px;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.Game .start .start-btn{
+  display:block;
+  width: 120px;
+  margin: auto;
+  color: black;
+}
+.Game .start .easy{
+  background-color: olivedrab;
+  
+}
+.Game .start .meduim{
+  
+  background-color: orangered;
+  
+}
+.Game .start .hard{
+  
+  background-color: red;
+  
+}
+.Game .start span{
+  margin: auto;
+  font-size: 25px;
+  color: #2f8ac7;
+  font-weight: bold;
+}
+.Game .name{
+  max-width: 100%;
+  text-align: center;
+  background-color: #2f8ac7;
+  color: white;
+  padding: 25px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.Game .container{
+  margin: auto 150px;
+  padding: 0 150px;
+}
+
+.Game .container .message{
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.Game .container .message span::before{
+  content: '[';
+  color: green;
+  position: relative;
+}
+.Game .container .message span::after{
+  content: ']';
+  color: green;
+  position: relative;
+}
+
+.Game .container .the-word{
+  background: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  color: #2f8ac7;
+  user-select: none;
+}
+
+.Game .container .input{
+  width: 96.5%;
+  margin: 15px 0;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  padding: 15px;
+  border: 3px solid #2f8ac7;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: #2f8ac7;
+  text-decoration: none;
+}
+.Game .container .input:focus{
+  outline: none;
+
+}
+.Game .container .upcomming-words{
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  user-select: none;
+}
+
+.Game .container .upcomming-words span{
+  margin: 4px;
+  background-color: #2f8ac7;
+  color: white;
+  padding: 7px;
+  border-radius: 4px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.Game .container .control{
+  background-color: white;
+  margin: 10px auto;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Game .container .control .time{
+  flex-basis: 75%;
+}
+
+.Game .container .control .time span,
+.Game .container .control .score .total,
+.Game .container .control .score .got{
+  color: #0caf73;
+}
+.Game .container .message span{
+  color: #0caf73;
+}
+.Game .container .finish{
+  display: none;
+  text-align: center;
+  width: 150%;
+  padding: 250px;
+  font-size: 70px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background-color: rgb(0 0 0 / 0.8);
+  height: 150%;
+}

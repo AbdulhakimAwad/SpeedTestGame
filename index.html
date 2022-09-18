@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="Game">
+      <div class="name">Typing Speed Test Game</div>
+      <!-- start screen -->
+      <div class="start">
+
+        <p>select the level you wanna play, and you should know this rules:</p>
+        <br>
+    
+        <p>in "Easy" you have 6 seconds and it isn't necessary to enter the 
+          word in the LowerCase or the UpperCase.
+          <hr>
+          in "Normal" you have 4 seconds and this is only the difference between " Normal" and "Easy"  
+          <hr>
+          in "hard" you have 3 seconds and it's necessary to enter the word in the same form (UpperCase or LowerCase)
+        </p>
+        <br>
+        <p>so click on "Start Playing" after click on the level you want, if you don't 
+          click on the level it will be "easy" by default , good luck ..</p>
+        <div class="btns">
+          <button class="start-btn">Start Playing</button>
+          <button class="easy">Easy</button>
+          <button class="meduim">Normal</button>
+          <button class="hard">Hard</button>
+        </div>
+        <span></span>
+      </div>
+      <div class="container">
+        <div class="message">
+          You'r Playing On
+          <span class="lvl"></span> &You Have<span class="seconds"></span>Second
+          To Type The Word
+        </div>
+
+        <div class="the-word"></div>
+        <input type="text" class="input" />
+        <div class="upcomming-words"></div>
+        <div class="control">
+          <div class="time">Time left: <span></span> Seconds</div>
+          <div class="score">
+            Score: <span class="got"></span> From <span class="total"></span>
+          </div>
+        </div>
+        <div class="finish"></div>
+      </div>
+    </div>
+    <script src="dist/index.js"></script>
+  </body>
+</html>
